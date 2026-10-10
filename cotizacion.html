@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solicitar cotización · VERTEXCAM</title>
+  <meta name="description" content="Cuéntanos sobre tu proyecto de videovigilancia para iniciar una evaluación y propuesta de instalación.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="https://unpkg.com/lucide@0.383.0/dist/umd/lucide.min.js" defer></script>
+  <script src="assets/js/icons.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <a class="brand" href="index.html"><b>V/</b>VERTEXCAM</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú"><i data-lucide="menu"></i><span>Menú</span></button>
+    <nav id="site-nav" aria-label="Navegación principal">
+      <a href="index.html">Inicio</a><a href="servicios.html">Servicios</a><a href="sistemas.html">Sistemas</a><a href="marcas.html">Marcas</a><a href="espacios.html">Espacios</a><a href="proceso.html">Proceso</a><a href="soporte.html">Soporte</a><a href="preguntas.html">Preguntas frecuentes</a>
+      <a class="btn" href="cotizacion.html">Solicitar cotización <i data-lucide="arrow-up-right"></i></a>
+    </nav>
+  </header>
+  <main>
+    <section class="dark">
+      <div class="quote">
+        <div>
+          <div class="eye">Hablemos de tu proyecto</div>
+          <h1>El primer paso es entender lo que necesitas proteger.</h1>
+          <p class="lead">Comparte los detalles de tu espacio. Con VERTEXCAM, tu consulta se convierte en el punto de partida de una propuesta de instalación.</p>
+          <div class="info"><b>Para orientar tu cotización</b>Tipo de espacio y zonas a observar<br>Equipos o cableado existentes<br>Necesidades de grabación y acceso</div>
+          <div class="pend"><i data-lucide="phone"></i>Teléfono · Pendiente de completar</div>
+          <div class="pend"><i data-lucide="mail"></i>Correo electrónico · Pendiente de completar</div>
+          <div class="pend"><i data-lucide="map-pin"></i>Zona de servicio · Pendiente de completar</div>
+        </div>
+        <form id="quoteForm">
+          <h2>Solicitar cotización</h2>
+          <p class="small">Los campos con * son obligatorios.</p>
+          <div class="row">
+            <label>Nombre *<input name="nombre" autocomplete="name" maxlength="100" required placeholder="Tu nombre"></label>
+            <label>Teléfono<input name="telefono" type="tel" autocomplete="tel" maxlength="30" placeholder="Tu número de contacto"></label>
+          </div>
+          <label>Correo electrónico *<input name="correo" type="email" autocomplete="email" maxlength="254" required placeholder="Tu correo electrónico"></label>
+          <div class="row">
+            <label>Tipo de espacio *<select name="espacio" required><option value="">Selecciona una opción</option><option>Hogar</option><option>Comercio</option><option>Empresa</option><option>Otro</option></select></label>
+            <label>Sistema de interés<select name="sistema"><option>Necesito orientación</option><option>Analógico (DVR)</option><option>IP (NVR)</option></select></label>
+          </div>
+          <label>Localidad o zona del proyecto<input name="zona" maxlength="150" placeholder="Indica dónde se realizaría la instalación"></label>
+          <label>Cuéntanos qué necesitas *<textarea name="mensaje" maxlength="2000" required placeholder="Zonas a observar, cámaras existentes y cualquier detalle que debamos considerar."></textarea></label>
+          <label class="chk"><input type="checkbox" required>Autorizo el uso de mis datos para responder a esta solicitud. Aviso de privacidad pendiente de completar.</label>
+          <button class="btn" type="submit">Enviar solicitud de cotización <i data-lucide="arrow-up-right"></i></button>
+          <p id="formStatus" class="small" role="status" aria-live="polite">Este formulario aún no está conectado a un servicio: no envía ni almacena tus datos.</p>
+          <p class="small" style="font-size:11px">La solicitud permite evaluar el proyecto; no confirma disponibilidad ni contratación.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <div class="cta">
+    <div><div class="eye">Una visión clara. Un mejor punto de partida.</div><h2>Tu próximo sistema empieza<br>con una buena conversación.</h2></div>
+    <a class="btn" href="cotizacion.html">Solicitar cotización <i data-lucide="arrow-up-right"></i></a>
+  </div>
+  <footer>
+    <div class="fg">
+      <div><p class="sg">VERTEXCAM</p><p>Instalación de cámaras de vigilancia analógicas e IP para hogares, comercios y empresas.</p></div>
+      <div><b>Servicios</b><a href="servicios.html">Instalación analógica</a><a href="servicios.html">Instalación IP</a><a href="marcas.html">Marcas de cámaras</a><a href="soporte.html">Mantenimiento y soporte</a></div>
+      <div><b>Tu proyecto</b><a href="sistemas.html">Comparar sistemas</a><a href="proceso.html">Cómo trabajamos</a><a href="preguntas.html">Preguntas frecuentes</a><a href="cotizacion.html">Solicitar cotización</a></div>
+    </div>
+    <div class="legal"><span>© VERTEXCAM · Videovigilancia</span><span>Aviso legal y privacidad · Pendientes de completar</span></div>
+  </footer>
+</body>
+</html>
